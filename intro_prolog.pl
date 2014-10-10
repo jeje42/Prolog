@@ -27,7 +27,7 @@ relation(X,Y) :- lien(X,Y).
 fermeture(X,Y) :- relation(X,Y).    			
 fermeture(X,Y) :- relation(X,Z), fermeture(Z,Y). 
 
-% ?-fermeture(X,Y).
+% ?-fermeture(X,Y). 
 % Attention, puisque le graphe qui correspond à lien 
 % contient un cycle, ce programme peut boucler
 
